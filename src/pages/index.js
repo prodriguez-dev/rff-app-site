@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Card from "../components/card"
 
 const IndexPage = () => (
   <Layout>
@@ -16,12 +17,12 @@ const IndexPage = () => (
         <Link to="/video">Watch the video</Link>
 
         <div className="Logos">
-          <img src={require('../images/logo-sketch.png')} width="50" alt=""/>
-          <img src={require('../images/logo-figma.png')} width="50" alt=""/>
-          <img src={require('../images/logo-studio.png')} width="50" alt=""/>
-          <img src={require('../images/logo-framer.png')} width="50" alt=""/>
-          <img src={require('../images/logo-react.png')} width="50" alt=""/>
-          <img src={require('../images/logo-swift.png')} width="50" alt=""/>
+          <img src={require('../images/logo-sketch.png')} width="50" alt="Sketch Logo"/>
+          <img src={require('../images/logo-figma.png')} width="50" alt="Figma Logo"/>
+          <img src={require('../images/logo-studio.png')} width="50" alt="Studio Logo"/>
+          <img src={require('../images/logo-framer.png')} width="50" alt="Framer Logo"/>
+          <img src={require('../images/logo-react.png')} width="50" alt="React Logo"/>
+          <img src={require('../images/logo-swift.png')} width="50" alt="Swift Logo"/>
         </div>
 
         <svg width="100%" height="172" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,6 +46,34 @@ const IndexPage = () => (
 
         </div>
       </div>
+
+      <div className="Cards">
+        <h2>12 courses, more coming</h2>
+        <div className="CardGroup">
+          <Card
+            title="Design System with Figma"
+            text="10 sections"
+            image={require('../images/card-bg-1.jpg')}
+          />
+          <Card
+            title="React for Designers"
+            text="12 sections"
+            image={require('../images/card-bg-2.jpg')}
+          />
+          <Card
+            title="Video Editing with Screenflow"
+            text="6 sections"
+            image={require('../images/card-bg-3.jpg')}
+          />
+          <Card
+            title="Sound Design with Cubase"
+            text="6 sections"
+            image={require('../images/card-bg-4.jpg')}
+          />
+        </div>
+
+      </div>
+
     </div>
   </Layout>
 )
