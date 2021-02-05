@@ -37,7 +37,7 @@ const SectionTitle = styled.h3`
   margin: 0;
   line-height: 1.2;
 
-  @media (max-width: 720px){
+  @media (max-width: 720px) {
     font-size: 40px;
   }
 `
