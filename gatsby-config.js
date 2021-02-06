@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `React from Figma`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: 'Complete courses about the best tools and design systems. Prototype and build apps with React and Swift. 60 hours of video content and resource materials. No coding experience required.',
+    keywords: 'react course, react for designers, ios development, sketch app, swift app course, arkit 2, after effects, create sketch plugin',
+    author: 'Paul Rodriguez',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +12,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'yvpiade4yk2p',
+        accessToken: 'FlwAz1iFtsL4CuL_eM4jXLQuj7GIKEONztCXlG5gH2s'
       },
     },
     `gatsby-transformer-sharp`,
