@@ -9,7 +9,7 @@ let FooterGroup = styled.div`
 `
 
 const Text = styled.p`
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 600;
     color: #486791;
     max-width: 500px;
@@ -65,7 +65,7 @@ const Footer = ({data, children}) => (
 
 
   <FooterGroup>
-    <Text>Tweet “Prototype and build apps with React and Swift. New courses by @MengTo”</Text>
+    <Text>Tweet “Prototype and build apps with React and Swift. New courses by @prodriguez_dev”</Text>
     <Button>Tweet</Button>
     <LinkGroup>{data.allContentfulLink.edges.map(edge => (
     <a href={edge.node.url}>{edge.node.title}</a>
